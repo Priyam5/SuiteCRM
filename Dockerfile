@@ -11,12 +11,7 @@ RUN docker-php-ext-install mysqli zip
  
 # Executed when container created out of image
 # ,"-D","FOREGROUND" 
-ENV APACHE_RUN_USER www-data
-ENV APACHE_RUN_GROUP www-data
-ENV APACHE_LOG_DIR /var/log/apache2
-
 EXPOSE 80
-
 # CMD echo "ServerName localhost" >> /etc/apache2/apache2.conf
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
