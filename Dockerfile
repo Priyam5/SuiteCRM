@@ -8,7 +8,7 @@ MAINTAINER priyam singh <2020priyamsingh@gmail.com>
 RUN apt-get update
 RUN apt-get install -y libzip-dev zip unzip zlib1g-dev
 RUN docker-php-ext-install mysqli zip
-# RUN chown -R www-data:www-data /var/www/html/suitecrm 
+RUN chown -R www-data:www-data /var/www/html/suitecrm 
 # Executed when container created out of image
 EXPOSE 80
 ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
