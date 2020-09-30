@@ -2,7 +2,7 @@
 
 FROM php:7.4-apache
 
-MAINTAINER priyam singh <2020priyamsingh@gmail.com>
+MAINTAINER Priyam Singh <2020priyamsingh@gmail.com>
 
 # Executed during the building of the image
 RUN apt-get update
